@@ -139,11 +139,11 @@ for creature_index in range(num_creatures):
     # Optional: Save the data to a JSON file after each creature
     now = datetime.now()
     name = 'hox' + now
-    output_json_path = "/Users/roschkach/Projekte/BCA/{name}/Dataset/creatures_data_2_hoxgenes.json"  # Update this path as necessary
+    output_json_path = "/Users/roschkach/Projekte/BCA/{name}/Dataset/creatures_data.json"  # Update this path as necessary
     with open(output_json_path, "w") as outfile:
         json.dump(creatures_data, outfile, indent=4)
 
-    config_file_path = "/Users/roschkach/Projekte/BCA/{name}/Dataset/creatures_data_2_hoxgenes.json" 
+    config_file_path = "/Users/roschkach/Projekte/BCA/{name}/Dataset/file.config" 
 
 
 print(f"{num_creatures} creatures generated and saved to {output_json_path}!")
